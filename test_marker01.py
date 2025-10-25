@@ -1,3 +1,4 @@
+# to run module level marker use same command as use for running normal markers 
 import pytest
 
 mylist = [2, 4, 5, 7, 8, 9, 10]
