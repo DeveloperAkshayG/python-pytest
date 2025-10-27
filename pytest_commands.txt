@@ -1,0 +1,26 @@
+pytest commands:
+
+1.To run the test based on test name or filename use below command:
+
+pytest -v -k "test or filename" --tb=no
+
+2.to see options with pytest:
+
+pytest --help/ pytest -h
+
+3.to come out after first failure and to not run any remaining test:
+pytest -v -k "module and not case"  --tb=no -x (traceback)
+
+4.to come out after "n" failure use below command
+pytest -v -k "module and not case" --tb=no --maxfail=n
+
+5.if we want to do quiet execution:
+pytest -v -k "module and not case" --tb=no -q
+
+6.when we just want to see what all test are collected by pytest and not to run the test:
+pytest -v -k "module and not case" --tb=no --collect-only
+
+7.To run only the last failed test:
+pytest -v -k "module and not case" --tb=no --lf
+
+ff-failed first
